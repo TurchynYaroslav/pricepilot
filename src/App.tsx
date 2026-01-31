@@ -6,6 +6,7 @@ import Header from "./components/sections/Header";
 import Hero from "./components/sections/Hero";
 import Pricing from "./components/sections/Pricing";
 import PricingCalculator from "./components/sections/PricingCalculator";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 function App() {
   const pricingRef = useRef<HTMLElement | null>(null);
@@ -23,6 +24,7 @@ function App() {
         <CTASection />
       </main>
       <Footer />
+      <SpeedInsights />
     </div>
   );
 }
